@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Front Page</title>
+</head>
+<body>
+
+<h2>Hi I am a programmer!!!</h2>
+<a th:href="@{/register}">Registration.</a><br><br>
+<a th:href="@{/getAllEmployee}">Click here to check Employees list.</a><br><br>
+<a th:href="@{/showEmployee/1}">Click here to check an employee details.</a><br><br>
+<a th:href="@{/deleteEmployee/1}">Click here to delete an employee details.</a><br><br>
+<a th:href="@{/update}">Click to update employee data.</a><br><br>
+<a th:href="@{/deleteAllEmployee}">Click to delete all employee data.</a><br><br>
+</body>
+</html>

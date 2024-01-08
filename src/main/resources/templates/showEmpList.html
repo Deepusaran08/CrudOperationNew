@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Employee list Page</title>
+</head>
+<body>
+<h2>All Employees List here!!</h2>
+<table>
+	<tr>
+	<th>Employee ID</th>
+	<th>Employee Name</th>
+	<th>Employee Email</th>
+	</tr>
+	<tr th:each="employee:${empList}">
+		<td th:text="${employee.id}"></td>
+		<td th:text="${employee.name}"></td>
+		<td th:text="${employee.email}"></td>
+	</tr>
+</table>
+</body>
+</html>

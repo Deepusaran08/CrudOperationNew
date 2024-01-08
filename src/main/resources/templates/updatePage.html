@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Updating Details.</title>
+</head>
+<body>
+<h3>--------Update page!!!--------</h3>
+<br><br>
+	<form action="#" th:action="@{/updateEmployee}" th:object="${employee}" method="post">
+<label>Enter your Id :</label>
+<input type="text" th:field="*{id}"/>
+<br><br>
+<label>Enter your name :</label>
+<input type="text" th:field="*{name}"/>
+<br><br>
+<label>Enter your email :</label>
+<input type="text" th:field="*{email}"/>
+<br><br>
+<button type="submit">Register</button>
+</form>
+</body>
+</html>
